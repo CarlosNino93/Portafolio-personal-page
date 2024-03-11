@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import GitHubIcon from '../icons/GitHubIcon.astro';
+import LinkedInIcon from '../icons/LinkedInIcon.astro';
+import PDFIcon from '../icons/PDFIcon.astro';
+import SocialMediaPill from '../components/SocialMediaPill.astro';
+import MailIcon from '../icons/MailIcon.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import BriefCaseIcon from '../icons/BriefCaseIcon.astro';
+import CodeIcon from '../icons/CodeIcon.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout title="Carlos Niño - Programmer and Web Developer">
+    <main class="pb-20">
+        <SectionContainer class="py-44">
+            <h1
+                class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4"
+            >
+                Hey!, I'am Carlos Niño
+                <a
+                    href="https://www.linkedin.com/in/carlos-d-nino-r/"
+                    target="_blank"
+                    rel="noopener"
+                    class="flex justify-center items-center"
+                >
+                    <Badge>Ready for working</Badge>
+                </a>
+            </h1>
+            <h2 class="text-2xl space-y-2 opacity-80">
+                <p>
+                    3+ Years using diferent JavaScript frameworks to migrate old
+                    web pages as a freelance.
+                </p>
+                <p>This frameworks include Angular, Next.js, and Astro.</p>
+            </h2>
+            <nav class="flex flex-wrap gap-4 justify-around p-4">
+                <SocialMediaPill href="https://github.com/CarlosNino93">
+                    <GitHubIcon size="25" />
+                    GitHub
+                </SocialMediaPill>
+                <SocialMediaPill
+                    href="https://www.linkedin.com/in/carlos-d-nino-r/"
+                >
+                    <LinkedInIcon size="25" />
+                    LinkedIn
+                </SocialMediaPill>
+                <SocialMediaPill href="https://github.com/CarlosNino93">
+                    <PDFIcon size="25" />
+                    Curriculum
+                </SocialMediaPill>
+                <SocialMediaPill href="mailto:carlosndr93@gmail.com">
+                    <MailIcon />
+                    carlosndr93@gmail.com
+                </SocialMediaPill>
+            </nav>
+        </SectionContainer>
+
+        <SectionContainer id="experience">
+            <header class="flex flex-row gap-x-2 mb-4 items-center">
+                <BriefCaseIcon class="size-9" />
+                <h2 class="text-4xl font-semibold p-4">Experience</h2>
+            </header>
+            <Experience />
+        </SectionContainer>
+
+        <SectionContainer id="projects">
+            <header class="flex flex-row gap-x-2 mb-4 items-center">
+                <CodeIcon class="size-9" />
+                <h2 class="text-4xl font-semibold p-4">Projects</h2>
+            </header>
+            <Projects />
+        </SectionContainer>
+    </main>
+</Layout>

@@ -1,0 +1,66 @@
+---
+import type { Code } from 'astro:components';
+
+const TAGS = {
+    NEXT: {
+        name: 'Next.js',
+        class: 'bg-black text-white',
+        icon: 'svg icon',
+    },
+    HTML: {
+        name: 'HTML',
+        class: 'bg-black text-white',
+        icon: 'svg icon',
+    },
+    CSS: {
+        name: 'CSS',
+        class: 'bg-black text-white',
+        icon: 'svg icon',
+    },
+    JAVASCRIPT: {
+        name: 'JavaScript',
+        class: 'bg-black text-white',
+        icon: 'svg icon',
+    },
+};
+
+const PROJECTS = [
+    {
+        title: 'project1',
+        description:
+            'this is the long description of the projecto where i can put the text where i describe my very beautifull programming project',
+        link: 'project url',
+        github: 'project repository url',
+        image: 'https://via.placeholder.com/300x200',
+        tags: [TAGS.NEXT, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: 'project2',
+        description:
+            'this is the long description of the projecto where i can put the text where i describe my very beautifull programming project',
+        link: 'project url',
+        github: 'project repository url',
+        image: 'https://via.placeholder.com/300x200',
+        tags: [TAGS.NEXT, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+];
+---
+
+{
+    PROJECTS.map(({ title, description, link, github, image, tags }) => {
+        return (
+            <article>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <ul class="flex flex-row gap-4">
+                    {tags.map((tag) => {
+                        {
+                            return <li class="border">{tag.name}</li>;
+                        }
+                    })}
+                </ul>
+                <img src={image} alt={`Screenshot of ${title}`} />
+            </article>
+        );
+    })
+}

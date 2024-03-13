@@ -1,26 +1,35 @@
 ---
-import type { Code } from 'astro:components';
+import NextjsIcon from '../icons/technologyIcons/NextjsIcon.astro';
+import CSSIcon from '../icons/technologyIcons/CSSIcon.astro';
+import TailwindIcon from '../icons/technologyIcons/TailwindIcon.astro';
+import Html5Icon from '../icons/technologyIcons/Html5Icon.astro';
+import JavasScriptIcon from '../icons/technologyIcons/JavasScriptIcon.astro';
 
 const TAGS = {
     NEXT: {
-        name: 'Next.js',
+        title: 'Next.js',
         class: 'bg-black text-white',
-        icon: 'svg icon',
+        icon: NextjsIcon,
     },
     HTML: {
-        name: 'HTML',
+        title: 'HTML',
         class: 'bg-black text-white',
-        icon: 'svg icon',
+        icon: Html5Icon,
     },
     CSS: {
-        name: 'CSS',
+        title: 'CSS',
         class: 'bg-black text-white',
-        icon: 'svg icon',
+        icon: CSSIcon,
     },
     JAVASCRIPT: {
-        name: 'JavaScript',
+        title: 'JavaScript',
         class: 'bg-black text-white',
-        icon: 'svg icon',
+        icon: JavasScriptIcon,
+    },
+    TAYLWIND: {
+        title: 'Tailwind CSS',
+        class: 'bg-black text-white',
+        icon: TailwindIcon,
     },
 };
 
@@ -41,7 +50,7 @@ const PROJECTS = [
         link: 'project url',
         github: 'project repository url',
         image: 'https://via.placeholder.com/300x200',
-        tags: [TAGS.NEXT, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+        tags: [TAGS.NEXT, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.TAYLWIND],
     },
 ];
 ---
@@ -55,7 +64,14 @@ const PROJECTS = [
                 <ul class="flex flex-row gap-4">
                     {tags.map((tag) => {
                         {
-                            return <li class="border">{tag.name}</li>;
+                            return (
+                                <span
+                                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 m-2`}
+                                >
+                                    {tag.title}
+                                    <tag.icon class="size-4" />
+                                </span>
+                            );
                         }
                     })}
                 </ul>

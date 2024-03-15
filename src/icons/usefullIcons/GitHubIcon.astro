@@ -1,15 +1,5 @@
----
-interface Props {
-    size: string;
-}
-const { size } = Astro.props;
----
-
 <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="icon icon-tabler icon-tabler-brand-github"
-    width={size}
-    height={size}
+    {...Astro.props}
     viewBox="0 0 24 24"
     stroke-width="2"
     stroke="currentColor"

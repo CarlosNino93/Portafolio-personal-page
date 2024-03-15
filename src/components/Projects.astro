@@ -1,61 +1,8 @@
 ---
-import NextjsIcon from '../icons/technologyIcons/NextjsIcon.astro';
-import CSSIcon from '../icons/technologyIcons/CSSIcon.astro';
-import TailwindIcon from '../icons/technologyIcons/TailwindIcon.astro';
-import Html5Icon from '../icons/technologyIcons/Html5Icon.astro';
-import JavasScriptIcon from '../icons/technologyIcons/JavasScriptIcon.astro';
 import GitHubIcon from '../icons/usefullIcons/GitHubIcon.astro';
 import LinkButton from './LinkButton.astro';
 import LinkIcon from '../icons/usefullIcons/LinkIcon.astro';
-
-const TAGS = {
-    NEXT: {
-        title: 'Next.js',
-        class: 'bg-black text-white',
-        icon: NextjsIcon,
-    },
-    HTML: {
-        title: 'HTML',
-        class: 'bg-black text-white',
-        icon: Html5Icon,
-    },
-    CSS: {
-        title: 'CSS',
-        class: 'bg-black text-white',
-        icon: CSSIcon,
-    },
-    JAVASCRIPT: {
-        title: 'JavaScript',
-        class: 'bg-black text-white',
-        icon: JavasScriptIcon,
-    },
-    TAYLWIND: {
-        title: 'Tailwind CSS',
-        class: 'bg-black text-green',
-        icon: TailwindIcon,
-    },
-};
-
-const PROJECTS = [
-    {
-        title: 'project1',
-        description:
-            'this is the long description of the projecto where i can put the text where i describe my very beautifull programming project',
-        link: 'project url',
-        github: 'project repository url',
-        image: 'https://via.placeholder.com/300x200',
-        tags: [TAGS.NEXT, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-    },
-    {
-        title: 'project2',
-        description:
-            'this is the long description of the projecto where i can put the text where i describe my very beautifull programming project',
-        link: 'project url',
-        github: 'project repository url',
-        image: 'https://via.placeholder.com/300x200',
-        tags: [TAGS.JAVASCRIPT, TAGS.TAYLWIND],
-    },
-];
+import { PROJECTS } from '../repostitories/projects.js';
 ---
 
 <div class="flex flex-col gap-y-16">

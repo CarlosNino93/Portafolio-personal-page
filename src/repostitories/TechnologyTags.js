@@ -4,6 +4,7 @@ import TailwindIcon from '../icons/technologyIcons/TailwindIcon.astro';
 import Html5Icon from '../icons/technologyIcons/Html5Icon.astro';
 import JavasScriptIcon from '../icons/technologyIcons/JavasScriptIcon.astro';
 import AstroIcon from '../icons/technologyIcons/AstroIcon.astro';
+import SupabaseIcon from '../icons/technologyIcons/SupabaseIcon.astro';
 
 export const TAGS = {
     ASTRO: {
@@ -31,6 +32,11 @@ export const TAGS = {
         title: 'JavaScript',
         class: 'bg-black text-white',
         icon: JavasScriptIcon,
+    },
+    SUPABASE: {
+        title: 'Supabase',
+        class: 'bg-black text-white',
+        icon: SupabaseIcon,
     },
     TAYLWIND: {
         title: 'Tailwind CSS',

@@ -1,7 +1,7 @@
 export const EXPERIENCE = [
     {
         date: 'date',
-        title: 'title',
+        title: 'title1',
         company: 'company',
         description:
             'this is abig description to test the balance in the section. it has a lot of characters and words and is too long, you can made it more  bigger if you can , but whit abouit 3 lines will be ok.',

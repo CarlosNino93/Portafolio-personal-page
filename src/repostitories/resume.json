@@ -1,0 +1,458 @@
+{
+    "basics": {
+        "name": "Carlos D. Niño R.",
+        "label": "Full Stack Angular .NET /Electronic Engineer/Automation Projects Designer",
+        "image": "https://media.licdn.com/dms/image/v2/D4E03AQGNjXsUtfLZ8Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1692964508964?e=1762387200&v=beta&t=cd8mcMxbHupNkMEi2U21PhrNeH-SMPmhd6qRlCRu4HI",
+        "email": "carlosndr93@gmail.com",
+        "phone": "0416-8552425",
+        "url": "my profile url placeholder",
+        "summary": "I'm a full stack web developer with solid experience in backend development (.NET 7, .NET 9, .NET Core 5 with C# and Entity Framework Core) and frontend development (Angular, React, Bootstrap, Sass). My expertise includes configuring streaming APIs (Jellyfin), integrating services, manage databases with SQL and the use of Git. As an electronics engineer, I also bring significant experience from the industrial sector, where I've designed electrical panels for automation and control, supervised industrial plant maintenance (PLCs, boilers, effluent systems), and programmed HMI interfaces. This diverse background allows me to offer a comprehensive perspective on technology projects in various environments.I'm a full stack web developer with solid experience in backend development (.NET 7, .NET 9, .NET Core 5 with C# and Entity Framework Core) and frontend development (Angular, React, Bootstrap, Sass). My expertise includes configuring streaming APIs (Jellyfin), integrating services, manage databases with SQL and the use of Git. As an electronics engineer, I also bring significant experience from the industrial sector, where I've designed electrical panels for automation and control, supervised industrial plant maintenance (PLCs, boilers, effluent systems), and programmed HMI interfaces. This diverse background allows me to offer a comprehensive perspective on technology projects in various environments.",
+        "location": {
+            "address": "El Cují sector Los Robles Calle 1 con Carrera 1",
+            "postalCode": "3001",
+            "city": "Barquisimeto",
+            "countryCode": "VE",
+            "region": "Lara"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "Carlos Niño",
+                "url": "www.linkedin.com/in/carlos-d-nino-r"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Moovimi",
+            "position": "Jellyfin API Maintainer",
+            "url": "",
+            "startDate": "2023-03-01",
+            "endDate": "Current",
+            "summary": "Maintain and customize changes to the Jellyfin-based streaming API using .Net 7 & .Net 9. This includes configuration and modification of EndPoints and source code to adapt it to the specific needs of the streaming application. This was a part-time, remote role.",
+            "highlights": [
+                "Maintained and customized Jellyfin-based streaming API with .Net 7 & .Net 9",
+                "Configured and modified API EndPoints",
+                "Adapted source code to meet specific streaming application requirements"
+            ]
+        },
+        {
+            "name": "Independent Contractor",
+            "position": "Automation and Control Boards Designer",
+            "url": "",
+            "startDate": "2015-06-01",
+            "endDate": "Current",
+            "summary": "Design of electrical boards for automation and control of industrial processes, including programming HMI interfaces for embedded systems.",
+            "highlights": [
+                "Implemented effluent recovery systems -OGS Atlas/Orica, Peru",
+                "Modernized control system for a cement-based tile adhesive mixing and bagging plant - Interpego, Venezuela",
+                "Programmed HMI interfaces for embedded systems - DPI Ingenieria, Venezuela",
+                "PETN Drying Plant Enginering - OGS Atlas/Orica, Peru",
+                "Emulsifier Flow Control System - OGS Atlas/Orica - Peru"
+            ]
+        },
+        {
+            "name": "Acrilum",
+            "position": "Maintenance Supervisor",
+            "url": "",
+            "startDate": "2021-05-01",
+            "endDate": "2025-05-01",
+            "summary": "Supervision, coordination, and planning of maintenance procedures for various industrial equipment, including Chiller, Boiler, Bridge Crane, Profiles polisher, and effluent treatment plant. Also responsible for training personnel and supervising contractor activities.",
+            "highlights": [
+                "Supervised and coordinated maintenance for key industrial equipment (Chiller, Boiler, Bridge Crane, etc.)",
+                "Trained personnel in maintenance and operation of machinery",
+                "Planned and supervised activities performed by contractors"
+            ]
+        },
+        {
+            "name": "Acrilum",
+            "position": "Anodizing process analyst",
+            "url": "",
+            "startDate": "2019-10-01",
+            "endDate": "2021-05-01",
+            "summary": "Analyst in the production area of the aluminum profile anodizing line. Responsibilities included personnel supervision, system operation (Alumaster, boiler, waste water purification), control and register of production/supplies, and maintenance of electric/electronic boards.",
+            "highlights": [
+                "Supervised personnel in maintenance and production tasks",
+                "Operated and maintained critical systems including Alumaster control, Boiler, and Waste Water Purification plant",
+                "Controlled and registered production and necessary supplies",
+                "Trained newly entered company personnel"
+            ]
+        },
+        {
+            "name": "Alianza Capitales",
+            "position": "Full stack developer",
+            "url": "",
+            "startDate": "2021-11-01",
+            "endDate": "2022-07-01",
+            "summary": "Full stack development using Frontend: React, Chakra UI, WebPack, Formik, TypesScript, Redux Toolkit, and Backend: .NET Core 5 (C#), Entity Framework Core, SQL Server. Designed and developed functional components, views, and integrated backend and frontend services. This was a part-time, remote role.",
+            "highlights": [
+                "Developed Frontend with React, Chakra UI, and TypeScript",
+                "Developed Backend with .NET Core 5 (C#) and SQL Server",
+                "Designed and developed functional components and views",
+                "Integrated Backend and Frontend services"
+            ]
+        },
+        {
+            "name": "Freelance",
+            "position": "Electronic technician",
+            "url": "",
+            "startDate": "2010-07-01",
+            "endDate": "2021-12-01",
+            "summary": "Repairs of domestic and industrial electronic equipment under direct agreement with clients.",
+            "highlights": [
+                "Repaired a wide range of domestic electronic equipment",
+                "Repaired industrial electronic equipment under client agreement"
+            ]
+        },
+        {
+            "name": "Founduss",
+            "position": "FrontEnd Developer",
+            "url": "",
+            "startDate": "2021-01-01",
+            "endDate": "2021-11-01",
+            "summary": "FrontEnd development using Angular, Angular Material, Bootstrap, and Sass. Created views, functionalities, and services, integrated existing views with the BackEnd, and assured code quality through manual testing. This was a temporary contract, remote role.",
+            "highlights": [
+                "Developed Frontend with Angular, Angular Material, and Sass",
+                "Created views, functionalities, and services",
+                "Integrated views with the BackEnd",
+                "Assured code quality through manual testing"
+            ]
+        },
+        {
+            "name": "Ingenieria DPI C.A",
+            "position": "Automation and Repair Technician",
+            "url": "",
+            "startDate": "2018-01-01",
+            "endDate": "2019-08-01",
+            "summary": "Industrial electronic equipment repair (Inverters, PLC's, Controlers, Power Sources, Servers, UPS). Also responsible for electric boards assembly and design, data/voice network installation, CCTV, and design of middle complexity electronic circuits.",
+            "highlights": [
+                "Repaired industrial electronic equipment (Inverters, PLC's, Controlers)",
+                "Assembled and designed electric boards",
+                "Installed data and voice networks, and CCTV systems",
+                "Designed middle complexity electronic circuits (Voltage Protector, automation Relays)"
+            ]
+        },
+        {
+            "name": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
+            "position": "CAD Laboratory Technician",
+            "url": "",
+            "startDate": "2014-03-01",
+            "endDate": "2018-05-01",
+            "summary": "General maintenance of hardware and software for CAD stations and Plotter. Included software/hardware installation, general PC maintenance, use of CAD software (Autocad, Inventor, Solidworks), drawing up plans, 3D modeling, and elaboration of teaching guides.",
+            "highlights": [
+                "Maintained hardware and software for CAD stations and Plotter",
+                "Performed general PC and component maintenance (RAM, HDD)",
+                "Utilized and provided support for CAD software (Autocad, Inventor, Solidworks)",
+                "Drew up plans and performed 3D modeling"
+            ]
+        },
+        {
+            "name": "Manufacturas Generales GEMACA",
+            "position": "Intern",
+            "url": "",
+            "startDate": "2010-03-01",
+            "endDate": "2010-07-01",
+            "summary": "Intern in the area of electromechanical maintenance of HDPE extruders in production lines of plastic pipes. Tasks included maintenance of conveyors, air conditioner, Chillers, water pump systems, electric boards, and basic plumbing/wiring installation.",
+            "highlights": [
+                "Maintained electromechanical equipment for HDPE extruders",
+                "Performed maintenance on Chillers, water pump systems, and electric boards",
+                "Assisted with wiring installation and basic plumbing"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "url": "https://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description…",
+            "highlights": ["Awarded 'Volunteer of the Month'"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
+            "url": "",
+            "area": "Electronic Engineering Mention Control",
+            "studyType": "Bachelor's degree",
+            "startDate": "2011-01-01",
+            "endDate": "2019-01-01",
+            "score": "",
+            "courses": []
+        },
+        {
+            "institution": "Escuela Tecnica Industrial Lara",
+            "url": "",
+            "area": "Electronic Technique",
+            "studyType": "High School Technical Education",
+            "startDate": "2005-01-01",
+            "endDate": "2010-01-01",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Professional Course on Git and GitHub",
+            "date": "2023-09-01",
+            "issuer": "Platzi",
+            "url": ""
+        },
+        {
+            "name": "Introduction to Artificial Intelligence Course",
+            "date": "2023-09-01",
+            "issuer": "Platzi",
+            "url": ""
+        },
+        {
+            "name": "EF Standard English test",
+            "date": "2023-07-01",
+            "issuer": "EF International Language Centers",
+            "url": ""
+        },
+        {
+            "name": "Basic Programming Course",
+            "date": "2023-01-01",
+            "issuer": "Platzi",
+            "url": ""
+        }
+    ],
+    "courses": [
+        {
+            "name": "LAN and WAN Network Installation",
+            "issuer": "Autónomo",
+            "details": ""
+        },
+        {
+            "name": "Handling of Hazardous Chemicals",
+            "issuer": "Acrilum C.A.",
+            "details": ""
+        },
+        {
+            "name": "Food Handling",
+            "issuer": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
+            "details": ""
+        },
+        {
+            "name": "Maintenance of Industrial Electronic Equipment",
+            "issuer": "Escuela Tecnica Industrial Lara",
+            "details": ""
+        },
+        {
+            "name": "Diesel Engine Maintenance",
+            "issuer": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
+            "details": ""
+        },
+        {
+            "name": "Diesel Mechanics",
+            "issuer": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
+            "details": ""
+        },
+        { "name": "Boiler Operation", "issuer": "Acrilum C.A.", "details": "" },
+        {
+            "name": "Repair of Radio, TV, and DVD",
+            "issuer": "Escuela Tecnica Industrial Lara",
+            "details": ""
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "url": "https://publication.com",
+            "summary": "Description…"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "Master",
+            "keywords": ["HTML", "CSS", "JavaScript"]
+        }
+    ],
+    "languages": [
+        { "language": "English", "fluency": "C1" },
+        { "language": "Spanish", "fluency": "Native Speaker" },
+        { "language": "Italian", "fluency": "B1" }
+    ],
+    "interests": [
+        { "name": "Archery", "keywords": ["Bow", "Sports", "Arrows"] }
+    ],
+    "references": [{ "name": "Jane Doe", "reference": "Reference…" }],
+    "projects": [
+        {
+            "name": "EMR-Cloud",
+            "startDate": "2024-12-01",
+            "endDate": "Current",
+            "description": "Project under development for the control of medical records. The frontend is being built with Angular 19, Tailwind, and PrimeNG. The backend uses a REST API with .Net8, Entity Framework, and SQL Server.",
+            "highlights": [
+                "Frontend: Angular 19, Tailwind CSS, PrimeNG",
+                "Backend: .Net8, Entity Framework, SQL Server",
+                "Architecture: REST API"
+            ],
+            "url": ""
+        },
+        {
+            "name": "MNGTools",
+            "startDate": "2024-01-01",
+            "endDate": "Current",
+            "description": "App prototype for managing tool inventory in an industrial plant. Developed using the Next.js framework with Firebase for database and authentication.",
+            "highlights": [
+                "Framework: Next.js",
+                "Database/Auth: Firebase",
+                "Language: TypeScript",
+                "UI:Shadcn"
+            ],
+            "url": ""
+        },
+        {
+            "name": "FranklinGT",
+            "startDate": "2021-01-01",
+            "endDate": "2024-12-01",
+            "description": "Website for controlling online tournaments held by an influencer. Involved creation of the app and subsequent migrations through different versions of Angular (12 to 18).",
+            "highlights": [
+                "Frontend: Angular 12-18",
+                "Database: Firebase",
+                "Scope: Web app for tournament control and multi-version migration"
+            ],
+            "url": ""
+        },
+        {
+            "name": "PETN Drying Plant Engineering",
+            "startDate": "2023-06-01",
+            "endDate": "2023-08-01",
+            "description": "Design of a grounding system and lightning protection. Design of an electrical lighting system. Design of a distribution panel. Design of a control and automation panel for 4 drying lines. Design of a pneumatic control system panel.",
+            "highlights": [
+                "Designed grounding and lightning protection systems",
+                "Designed control and automation panel for 4 drying lines"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Preheating Oven for Profiles for Electrostatic Painting",
+            "startDate": "2022-07-01",
+            "endDate": "2022-08-01",
+            "description": "Design of an electric oven for preheating aluminum profiles prior to electrostatic painting. Included control for conveyor belt advancement and temperature control with electric resistances.",
+            "highlights": [
+                "Designed electric preheating oven",
+                "Implemented control systems for temperature and conveyor belt speed"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Emulsifier Flow Control System - Orica Peru",
+            "startDate": "2021-12-01",
+            "endDate": "2022-02-01",
+            "description": "Collaboration on technical advice for the design of a control and automation system, sensor selection, and preparation of control and process flow diagrams.",
+            "highlights": [
+                "Provided technical consulting on control system design",
+                "Sensor selection and diagram elaboration"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Effluent Recovery Systems - PETN Plant",
+            "startDate": "2021-10-01",
+            "endDate": "2022-02-01",
+            "description": "Design of control panels for pump, hydropneumatic, and level management in tanks for the effluent recovery system of a PETN plant (Orica Peru).",
+            "highlights": [
+                "Designed control panels for pump and tank level management",
+                "Focus on effluent recovery systems"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Control for Dust Extraction System - Automatic Aluminum Polisher",
+            "startDate": "2021-09-01",
+            "endDate": "2021-10-01",
+            "description": "Electrical panel for motor control and purging of dust particles detached during the aluminum profile polishing process at the Acrilum plant.",
+            "highlights": [
+                "Designed electrical panel for motor control and dust purging"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Electrical Connection for Electrostatic Painting Plant and Generator Backup",
+            "startDate": "2021-08-01",
+            "endDate": "2021-08-01",
+            "description": "Design of a distribution panel for an electrostatic painting plant (Capacity 1000A 220V 60Hz). Included connection of critical equipment with a 250kVA electric generator backup.",
+            "highlights": [
+                "Designed 1000A distribution panel",
+                "Integrated 250kVA generator for critical equipment backup"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Implementation of Generic Control Card for Inter Voltage Stabilizer",
+            "startDate": "2019-02-01",
+            "endDate": "2019-08-01",
+            "description": "Designed and built a generic control card adaptable to defunct voltage stabilizers used by Inter in Venezuela for TV/Internet transmission amplifiers. This allowed the company to reuse a batch of 50 faulty units, preserving expensive components.",
+            "highlights": [
+                "Designed and built a generic control PCB",
+                "Recovered a batch of 50 faulty voltage stabilizer units"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Design of an Alternator Relay",
+            "startDate": "2018-07-01",
+            "endDate": "2018-09-01",
+            "description": "Designed a commercial model of an alternator relay, a device that sequentially activates a group of 2 or 3 loads. Included electronic circuit design, PCB design, prototype manufacturing, and validation testing.",
+            "highlights": [
+                "Designed and manufactured a marketable alternator relay prototype",
+                "Included circuit and PCB design"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Design of a Level Control Relay",
+            "startDate": "2018-03-01",
+            "endDate": "2018-04-01",
+            "description": "Designed a conductivity-based level relay with indication for four liquid levels via LEDs and an NC/NO relay output. Included circuit design, PCB design, prototype construction, and validation testing.",
+            "highlights": [
+                "Designed conductivity-based level control relay",
+                "Developed prototype with 4-level LED indication"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Design and Implementation of an Over-frequency Protection Relay for Invegas/Praxair",
+            "startDate": "2018-01-01",
+            "endDate": "2018-03-01",
+            "description": "Designed an electronic board to measure the fundamental electrical frequency at a variable frequency drive (VFD) output. The device disables the VFD and shuts down the motor if the maximum frequency value, determined by process regulations, is exceeded. Successfully implemented at the Invegas plant.",
+            "highlights": [
+                "Designed over-frequency protection circuit for VFDs",
+                "Successfully implemented at Invegas plant"
+            ],
+            "url": ""
+        }
+    ],
+    "academicAchievements": [
+        {
+            "name": "Direct Torque Control System for an AC Motor",
+            "issuer": "Universidad Nacional Experimental Politécnica 'Antonio José de Sucre'",
+            "date": "2019-03-01",
+            "grade": "9/9",
+            "details": "Special Degree Project (Thesis) involving the design of a modular direct torque control system and the construction of the control unit.",
+            "skillsUsed": [
+                "C++ Programming",
+                "Matlab",
+                "Microcontroller and DSP Microchip Programming",
+                "Design of measurement circuits using discrete components",
+                "Power Electronics",
+                "Mathematical modeling of motors and electronic components"
+            ]
+        }
+    ]
+}

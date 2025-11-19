@@ -206,25 +206,29 @@
             "name": "Professional Course on Git and GitHub",
             "date": "2023-09-01",
             "issuer": "Platzi",
-            "url": ""
+            "issuerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQEOTcHh0HnWwQ/company-logo_100_100/company-logo_100_100/0/1677870818259/platzi_inc_logo?e=1765411200&v=beta&t=hba_aW-KqkQ7moi6K2QOqLR_puda26lxXqhcG1KJ8Uo",
+            "url": "https://platzi.com/p/carlosndr93/curso/1557-git-github/diploma/detalle/"
         },
         {
             "name": "Introduction to Artificial Intelligence Course",
             "date": "2023-09-01",
             "issuer": "Platzi",
-            "url": ""
+            "issuerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQEOTcHh0HnWwQ/company-logo_100_100/company-logo_100_100/0/1677870818259/platzi_inc_logo?e=1765411200&v=beta&t=hba_aW-KqkQ7moi6K2QOqLR_puda26lxXqhcG1KJ8Uo",
+            "url": "https://platzi.com/p/carlosndr93/curso/6935-ai/diploma/detalle/"
         },
         {
             "name": "EF Standard English test",
-            "date": "2023-07-01",
+            "date": "2025-06-05",
             "issuer": "EF International Language Centers",
-            "url": ""
+            "issuerLogo": "https://media.licdn.com/dms/image/v2/D560BAQEaZTEMTXUcXg/company-logo_100_100/company-logo_100_100/0/1707299032732/ef_language_schools_for_professionals_logo?e=1765411200&v=beta&t=ZW3x0fzBFeD1_cNvcPmyP9RoLxz59tUU4imai7WDvWI",
+            "url": "https://www.efset.org/cert/YZemcr"
         },
         {
             "name": "Basic Programming Course",
             "date": "2023-01-01",
             "issuer": "Platzi",
-            "url": ""
+            "issuerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQEOTcHh0HnWwQ/company-logo_100_100/company-logo_100_100/0/1677870818259/platzi_inc_logo?e=1765411200&v=beta&t=hba_aW-KqkQ7moi6K2QOqLR_puda26lxXqhcG1KJ8Uo",
+            "url": "https://platzi.com/p/carlosndr93/curso/1050-basico-programacion/diploma/detalle/"
         }
     ],
     "courses": [
@@ -301,7 +305,8 @@
                 "Backend: .Net8, Entity Framework, SQL Server",
                 "Architecture: REST API"
             ],
-            "url": ""
+            "url": "",
+            "image": ""
         },
         {
             "name": "MNGTools",
@@ -315,6 +320,19 @@
                 "UI:Shadcn"
             ],
             "url": ""
+        },
+        {
+            "name": "ANFO Emulsion plant electrical & automation design",
+            "startDate": "2025-10-08",
+            "endDate": "2025-11-28",
+            "description": "Electrical And automation desing of an ANFO emulsion plant in conjunction with OGS Atlas and Dyno Nobel USA.",
+            "highlights": [
+                "Automation: Desing of the automation control system, compose of a SIEMENS S7 1500 PLC, 2 control boxes an 3 HMI for process control",
+                "Electrical: Desing of the 10KV Middle tension Sub-station and grounding grid, Lighting and services panels, electrical distribution system",
+                "Tecnologies: AutoCad, Revit, Dialux."
+            ],
+            "url": "",
+            "image": ""
         },
         {
             "name": "FranklinGT",

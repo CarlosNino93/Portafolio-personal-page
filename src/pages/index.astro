@@ -4,23 +4,25 @@ import Badge from '../components/Badge.astro';
 import GitHubIcon from '../icons/usefullIcons/GitHubIcon.astro';
 import LinkedInIcon from '../icons/usefullIcons/LinkedInIcon.astro';
 import PDFIcon from '../icons/usefullIcons/PDFIcon.astro';
-import SocialMediaPill from '../components/SocialMediaPill.astro';
+import UrlPill from '../components/UrlPill.astro';
 import MailIcon from '../icons/usefullIcons/MailIcon.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import BriefCaseIcon from '../icons/usefullIcons/BriefCaseIcon.astro';
 import CodeIcon from '../icons/usefullIcons/CodeIcon.astro';
 import Projects from '../components/Projects.astro';
-import { EXPERIENCE } from '../repostitories/Experience';
-import { PROJECTS } from '../repostitories/projects';
+import EducationIcon from '../icons/usefullIcons/EducationIcon.astro';
+import Education from '../components/Education.astro';
+import CertificateIcon from '../icons/usefullIcons/CertificateIcon.astro';
+import Certificates from '../components/Certificates.astro';
 
 let renderExperience = true;
 let renderProjects = true;
-if (EXPERIENCE[0].title === 'title') renderExperience = false;
-if (PROJECTS[0].title === 'project') renderExperience = false;
+let renderEducation = true;
+let renderCertificates = true;
 ---
 
-<Layout title="Carlos Niño - Programmer and Web Developer">
+<Layout title="Carlos Niño - Developer and Electronic Engineer">
     <main class="pb-20">
         <SectionContainer class="py-44">
             <h1
@@ -44,24 +46,22 @@ if (PROJECTS[0].title === 'project') renderExperience = false;
                 <p>This frameworks include Angular, Next.js, and Astro.</p>
             </h2>
             <nav class="flex flex-wrap gap-4 justify-around p-4">
-                <SocialMediaPill href="https://github.com/CarlosNino93">
+                <UrlPill href="https://github.com/CarlosNino93">
                     <GitHubIcon class="size-6" />
                     GitHub
-                </SocialMediaPill>
-                <SocialMediaPill
-                    href="https://www.linkedin.com/in/carlos-d-nino-r/"
-                >
+                </UrlPill>
+                <UrlPill href="https://www.linkedin.com/in/carlos-d-nino-r/">
                     <LinkedInIcon size="25" />
                     LinkedIn
-                </SocialMediaPill>
-                <SocialMediaPill href="/assets/CarlosNinoFullStack.pdf">
+                </UrlPill>
+                <UrlPill href="/assets/CarlosNinoFullStack.pdf">
                     <PDFIcon size="25" />
                     Curriculum
-                </SocialMediaPill>
-                <SocialMediaPill href="mailto:carlosndr93@gmail.com">
+                </UrlPill>
+                <UrlPill href="mailto:carlosndr93@gmail.com">
                     <MailIcon />
                     carlosndr93@gmail.com
-                </SocialMediaPill>
+                </UrlPill>
             </nav>
         </SectionContainer>
 
@@ -76,13 +76,38 @@ if (PROJECTS[0].title === 'project') renderExperience = false;
                 </SectionContainer>
             )
         }
-
-        <SectionContainer id="projects">
-            <header class="flex flex-row gap-x-2 mb-4 items-center">
-                <CodeIcon class="size-9" />
-                <h2 class="text-4xl font-semibold p-4">Projects</h2>
-            </header>
-            <Projects />
-        </SectionContainer>
+        {
+            renderProjects && (
+                <SectionContainer id="projects">
+                    <header class="flex flex-row gap-x-2 mb-4 items-center">
+                        <CodeIcon class="size-9" />
+                        <h2 class="text-4xl font-semibold p-4">Projects</h2>
+                    </header>
+                    <Projects />
+                </SectionContainer>
+            )
+        }
+        {
+            renderEducation && (
+                <SectionContainer id="education">
+                    <header class="flex flex-grow gap-x-2 mb-4 items-center">
+                        <EducationIcon class="size-9" />
+                        <h2 class="text-4xl font-semibold p-4">Education</h2>
+                    </header>
+                    <Education />
+                </SectionContainer>
+            )
+        }
+        {
+            renderCertificates && (
+                <SectionContainer id="Certificates">
+                    <header class="flex flex-grow gap-x-2 mb-4 items-center">
+                        <CertificateIcon class="size-9" />
+                        <h2 class="text-4xl font-semibold p-4">Certificates</h2>
+                    </header>
+                    <Certificates />
+                </SectionContainer>
+            )
+        }
     </main>
 </Layout>

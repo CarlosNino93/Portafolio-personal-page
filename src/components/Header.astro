@@ -11,14 +11,12 @@ import LinkButton from './LinkButton.astro';
         src="../assets/my-photo.jpg"
         alt="MyPhoto"
     />
-    <nav
-        class="flex flex-row flex-wrap justify-end md:flex-nowrap gap-x-10 opacity-90"
-    >
+    <nav class="flex flex-row flex-wrap md:flex-nowrap gap-x-10 opacity-90">
         <a href="#">Home</a>
         <a href="#about-me">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <LinkButton>PDF Resume<PDFIcon size="20" /></LinkButton>
     </nav>
+    <LinkButton>PDF Resume<PDFIcon size="20" /></LinkButton>
 </header>

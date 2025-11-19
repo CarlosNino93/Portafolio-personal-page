@@ -1,17 +1,10 @@
 ---
-import { EXPERIENCE } from '../repostitories/Experience';
 import type { WorkItem } from '../repostitories/resume.types';
 
-type Props = WorkItem
-// interface Props {
-//     date: string;
-//     title: string;
-//     company?: string;
-//     description: string;
-//     link?: string;
-// }
+type Props = WorkItem;
 
-const {name, position,url,startDate, endDate,summary,highlights} = Astro.props;
+const { name, position, url, startDate, endDate, summary, highlights } =
+    Astro.props;
 ---
 
 <div
@@ -30,10 +23,10 @@ const {name, position,url,startDate, endDate,summary,highlights} = Astro.props;
                 {position}
             </h4>
             <p class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
-                <time >
+                <time>
                     {startDate}
                 </time>
-                -            
+                /
                 <time>
                     {endDate}
                 </time>
@@ -43,7 +36,7 @@ const {name, position,url,startDate, endDate,summary,highlights} = Astro.props;
     <div
         class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
     >
-    <p class="text-pretty text-white">{summary}</p>
+        <p class="text-pretty text-white">{summary}</p>
         <p class="text-pretty">{highlights}</p>
 
         {

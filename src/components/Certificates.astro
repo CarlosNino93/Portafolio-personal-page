@@ -1,0 +1,34 @@
+---
+import LinkArrowIcon from '../icons/usefullIcons/LinkArrowIcon.astro';
+import resumeData from '../repostitories/resume.json';
+import type { Certificate } from '../repostitories/resume.types';
+import UrlPill from './UrlPill.astro';
+const certificates: Certificate[] = resumeData.certificates;
+---
+
+<div>
+    {
+        certificates.map(({ name, date, issuer, issuerLogo, url }) => (
+            <div class="grid grid-cols-5 my-16">
+                <div>
+                    <img
+                        class="col-span-1 rounded-xl"
+                        src={issuerLogo}
+                        alt={issuer}
+                    />
+                </div>
+                <div class="col-span-4">
+                    <header class="text-gray-100 text-2xl">{name}</header>
+                    <h1 class="text-gray-400">{date}</h1>
+                    <h2>{issuer}</h2>
+                    <div class="flex justify-end">
+                        <UrlPill href={url}>
+                            Show Credential
+                            <LinkArrowIcon />
+                        </UrlPill>
+                    </div>
+                </div>
+            </div>
+        ))
+    }
+</div>

@@ -1,26 +1,25 @@
 ---
 import ExperienceItem from './ExperienceItem.astro';
-import type { ResumeJSON } from '../repostitories/resume.types';
-import resumeData from '../repostitories/resume.json'
-
-function parseResume(raw: unknown): ResumeJSON {
-  return raw as ResumeJSON;
-}
-
-const resume: ResumeJSON = parseResume(resumeData);
-const work =resume.work;
+import type { WorkItem } from '../repostitories/resume.types';
+import resumeData from '../repostitories/resume.json';
+const work: WorkItem[] = resumeData.work;
 ---
+
 <ol
     id="experienceList"
     class="relative border-s border-gray-200 dark:border-gray-700 ml-2"
 >
-    {       
-        work?work.map((experience) => {
-            return (
-                <li>
-                    <ExperienceItem {...experience} />
-                </li>
-            );
-        }) : <p>You must provide a valid working experience</p> 
+    {
+        work ? (
+            work.map((experience) => {
+                return (
+                    <li>
+                        <ExperienceItem {...experience} />
+                    </li>
+                );
+            })
+        ) : (
+            <p>You must provide a valid working experience</p>
+        )
     }
 </ol>

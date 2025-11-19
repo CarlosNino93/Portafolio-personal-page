@@ -1,0 +1,36 @@
+---
+import resumeData from '../repostitories/resume.json';
+import type { EducationItem } from '../repostitories/resume.types';
+const education: EducationItem[] = resumeData.education;
+---
+
+<div class="border-s border-gray-200 flex flex-col gap-y-16">
+    <div>
+        {
+            education.map(
+                ({ institution, area, studyType, startDate, endDate }) => (
+                    <div class="relative mx-12 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-white/15 before:content-[''] md:gap-10 md:space-x-4] pb-16">
+                        <div class="sticky top-0">
+                            <header class="text-gray-100 text-2xl">
+                                {institution}
+                            </header>
+                            <span class="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">
+                                &bull;
+                            </span>
+
+                            <h3 class="text-xl font-bold text-yellow-400">
+                                {studyType}
+                            </h3>
+                            <h4 class="font-semibold text-xl text-gray-600 dark:text-white">
+                                {area}
+                            </h4>
+                            <p class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
+                                <time>{startDate}</time>/<time>{endDate}</time>
+                            </p>
+                        </div>
+                    </div>
+                ),
+            )
+        }
+    </div>
+</div>

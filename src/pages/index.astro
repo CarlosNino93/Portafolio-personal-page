@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 import GitHubIcon from '../icons/usefullIcons/GitHubIcon.astro';
@@ -90,7 +91,7 @@ let renderCertificates = false;
         {
             renderEducation && (
                 <SectionContainer id="education">
-                    <header class="flex flex-grow gap-x-2 mb-4 items-center">
+                    <header class="flex grow gap-x-2 mb-4 items-center">
                         <EducationIcon class="size-9" />
                         <h2 class="text-4xl font-semibold p-4">Education</h2>
                     </header>
@@ -101,7 +102,7 @@ let renderCertificates = false;
         {
             renderCertificates && (
                 <SectionContainer id="Certificates">
-                    <header class="flex flex-grow gap-x-2 mb-4 items-center">
+                    <header class="flex grow gap-x-2 mb-4 items-center">
                         <CertificateIcon class="size-9" />
                         <h2 class="text-4xl font-semibold p-4">Certificates</h2>
                     </header>

@@ -5,10 +5,7 @@ import resumeData from '../repostitories/resume.json';
 const work: WorkItem[] = resumeData.work;
 ---
 
-<ol
-    id="experienceList"
-    class="relative border-s border-gray-200 dark:border-gray-700"
->
+<ol id="experienceList" class="relative border-gray-200 dark:border-gray-700">
     {
         work ? (
             work.map((experience) => {

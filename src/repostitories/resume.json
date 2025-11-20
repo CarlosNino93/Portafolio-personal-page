@@ -306,7 +306,7 @@
                 "Architecture: REST API"
             ],
             "url": "",
-            "image": ""
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/emr-pacient.png"
         },
         {
             "name": "MNGTools",
@@ -319,6 +319,7 @@
                 "Language: TypeScript",
                 "UI:Shadcn"
             ],
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/mng-tools.png",
             "url": ""
         },
         {
@@ -331,8 +332,8 @@
                 "Electrical: Desing of the 10KV Middle tension Sub-station and grounding grid, Lighting and services panels, electrical distribution system",
                 "Tecnologies: AutoCad, Revit, Dialux."
             ],
-            "url": "",
-            "image": ""
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/emulsion-plant.png",
+            "url": ""
         },
         {
             "name": "FranklinGT",
@@ -344,7 +345,8 @@
                 "Database: Firebase",
                 "Scope: Web app for tournament control and multi-version migration"
             ],
-            "url": ""
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/franklin-gt.png",
+            "url": "https://franklin-gt.firebaseapp.com/"
         },
         {
             "name": "PETN Drying Plant Engineering",
@@ -355,10 +357,11 @@
                 "Designed grounding and lightning protection systems",
                 "Designed control and automation panel for 4 drying lines"
             ],
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/PETN.png",
             "url": ""
         },
         {
-            "name": "Preheating Oven for Profiles for Electrostatic Painting",
+            "name": "Profile Preheating Oven for Electrostatic Painting",
             "startDate": "2022-07-01",
             "endDate": "2022-08-01",
             "description": "Design of an electric oven for preheating aluminum profiles prior to electrostatic painting. Included control for conveyor belt advancement and temperature control with electric resistances.",
@@ -366,6 +369,7 @@
                 "Designed electric preheating oven",
                 "Implemented control systems for temperature and conveyor belt speed"
             ],
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/Preheating-oven.webp",
             "url": ""
         },
         {
@@ -377,6 +381,7 @@
                 "Provided technical consulting on control system design",
                 "Sensor selection and diagram elaboration"
             ],
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/Emulsifier control system.webp",
             "url": ""
         },
         {
@@ -388,6 +393,7 @@
                 "Designed control panels for pump and tank level management",
                 "Focus on effluent recovery systems"
             ],
+            "image": "/Portafolio-personal-page/src/assets/projectsPhotos/PETN-EFLUENT.png",
             "url": ""
         },
         {

@@ -37,7 +37,9 @@ const { name, position, url, startDate, endDate, summary, highlights } =
         class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
     >
         <p class="text-pretty text-white">{summary}</p>
-        <p class="text-pretty">{highlights}</p>
+        <ul class="text-gray-400 text-pretty">
+            {highlights?.map((highlight) => <li>{highlight}</li>)}
+        </ul>
 
         {
             url && (

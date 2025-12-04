@@ -9,10 +9,10 @@ const certificates: Certificate[] = resumeData.certificates;
 <div>
     {
         certificates.map(({ name, date, issuer, issuerLogo, url }) => (
-            <div class="grid grid-cols-5 my-16">
+            <div class="grid grid-cols-5 my-16 gap-2">
                 <div>
                     <img
-                        class="col-span-1 rounded-xl"
+                        class="col-span-1 rounded-xl "
                         src={issuerLogo}
                         alt={issuer}
                     />

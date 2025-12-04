@@ -1,22 +1,50 @@
 ---
+import BriefCaseIcon from '../icons/usefullIcons/BriefCaseIcon.astro';
+import CodeIcon from '../icons/usefullIcons/CodeIcon.astro';
+import HomeIcon from '../icons/usefullIcons/HomeIcon.astro';
+import MailIcon from '../icons/usefullIcons/MailIcon.astro';
 import PDFIcon from '../icons/usefullIcons/PDFIcon.astro';
+import PersonIcon from '../icons/usefullIcons/PersonIcon.astro';
 import LinkButton from './LinkButton.astro';
 ---
 
 <header
-    class="flex gap-4 justify-between items-center py-5 px-10 w-full mx-auto lg:w-5xl"
+    class="grid grid-rows-2 grid-cols-2 md:flex gap-4 justify-between items-center py-5 px-5 md:px-10 w-full mx-auto lg:max-w-5xl"
 >
     <img
-        class="rounded-full w-12 h-12"
+        class="row-start-1 row-span-1 rounded-full w-12 h-12"
         src="/Portafolio-personal-page/assets/my-photo.jpg"
         alt="MyPhoto"
     />
-    <nav class="flex flex-row flex-wrap md:flex-nowrap gap-x-10 opacity-90">
-        <a href="#">Home</a>
-        <a href="#about-me">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="mailto:carlosndr93@gmail.com">Contact</a>
+    <nav
+        class="row-start-2 col-span-2 flex justify-around flex-nowrap gap-x-10 opacity-90"
+    >
+        <a href="#"
+            ><p class="hidden md:block">Home</p>
+            <HomeIcon class="block md:hidden" /></a
+        >
+        <a href="#about-me"
+            ><p class="hidden md:block">About</p><PersonIcon
+                class="block md:hidden"
+            /></a
+        >
+        <a href="#experience"
+            ><p class="hidden md:block">Experience</p><BriefCaseIcon
+                class="block md:hidden"
+            /></a
+        >
+        <a href="#projects"
+            ><p class="hidden md:block">Projects</p><CodeIcon
+                class="block md:hidden"
+            /></a
+        >
+        <a href="mailto:carlosndr93@gmail.com">
+            <p class="hidden md:block">Contact</p>
+            <MailIcon class="block md:hidden" />
+        </a>
     </nav>
-    <LinkButton>PDF Resume<PDFIcon size="20" /></LinkButton>
+    <LinkButton class="justify-self-end"
+        ><p class="hidden md:block">PDF Resume</p>
+        <PDFIcon size="20" class="block md:hidden" /></LinkButton
+    >
 </header>

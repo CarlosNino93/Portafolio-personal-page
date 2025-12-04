@@ -1,13 +1,14 @@
 ---
 interface Props {
     size: string;
+    class: string;
 }
-const { size } = Astro.props;
+const { size, class: className = '' } = Astro.props;
 ---
 
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="icon icon-tabler icon-tabler-file-type-pdf"
+    class:list={['icon icon-tabler icon-tabler-file-type-pdf', className]}
     width={size}
     height={size}
     viewBox="0 0 24 24"

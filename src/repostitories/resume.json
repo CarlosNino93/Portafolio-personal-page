@@ -404,6 +404,7 @@
             "highlights": [
                 "Designed electrical panel for motor control and dust purging"
             ],
+            "image": "/Portafolio-personal-page/assets/projectsPhotos/dust collection system.webp",
             "url": ""
         },
         {
@@ -415,6 +416,7 @@
                 "Designed 1000A distribution panel",
                 "Integrated 250kVA generator for critical equipment backup"
             ],
+            "image": "/Portafolio-personal-page/assets/projectsPhotos/distribution_board.png",
             "url": ""
         },
         {
@@ -426,6 +428,7 @@
                 "Designed and built a generic control PCB",
                 "Recovered a batch of 50 faulty voltage stabilizer units"
             ],
+            "image": "/Portafolio-personal-page/assets/projectsPhotos/VoltageStabilizer.png",
             "url": ""
         },
         {
@@ -437,6 +440,7 @@
                 "Designed and manufactured a marketable alternator relay prototype",
                 "Included circuit and PCB design"
             ],
+            "image": "/Portafolio-personal-page/assets/projectsPhotos/alternator-relay.png",
             "url": ""
         },
         {
@@ -448,6 +452,7 @@
                 "Designed conductivity-based level control relay",
                 "Developed prototype with 4-level LED indication"
             ],
+            "image": "/Portafolio-personal-page/assets/projectsPhotos/level-relay.png",
             "url": ""
         },
         {
@@ -459,6 +464,7 @@
                 "Designed over-frequency protection circuit for VFDs",
                 "Successfully implemented at Invegas plant"
             ],
+            "image": "/Portafolio-personal-page/assets/projectsPhotos/frecuency-relay.png",
             "url": ""
         }
     ],

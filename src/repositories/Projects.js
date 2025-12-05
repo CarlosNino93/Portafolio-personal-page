@@ -1,4 +1,4 @@
-import { TAGS } from '../repostitories/TechnologyTags.js';
+import { TAGS } from './TechnologyTags.js';
 
 export const PROJECTS = [
     {

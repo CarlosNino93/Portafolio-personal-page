@@ -1,5 +1,6 @@
 ---
 import AstroIcon from '../icons/technologyIcons/AstroIcon.astro';
+import resumeData from '@repositories/resume.json';
 ---
 
 <footer
@@ -32,8 +33,9 @@ import AstroIcon from '../icons/technologyIcons/AstroIcon.astro';
             </li>
 
             <li>
-                <a href="mailto:carlosndr93@gmail.com" class="hover:underline"
-                    >Contact</a
+                <a
+                    href={'mailto:' + resumeData.basics.email}
+                    class="hover:underline">Contact</a
                 >
             </li>
         </ul>

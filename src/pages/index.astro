@@ -16,6 +16,7 @@ import EducationIcon from '../icons/usefullIcons/EducationIcon.astro';
 import Education from '../components/Education.astro';
 import CertificateIcon from '../icons/usefullIcons/CertificateIcon.astro';
 import Certificates from '../components/Certificates.astro';
+import resumeData from '@repositories/resume.json';
 
 let renderExperience = true;
 let renderProjects = true;
@@ -31,7 +32,9 @@ let renderCertificates = true;
             >
                 <p>Hey!, I'am Carlos Niño</p>
                 <a
-                    href="https://www.linkedin.com/in/carlos-d-nino-r/"
+                    href={resumeData.basics.profiles.filter(
+                        (p) => p.network == 'LinkedIn',
+                    )[0].url}
                     target="_blank"
                     rel="noopener"
                     class="block md:flex justify-center items-center"
@@ -51,7 +54,11 @@ let renderCertificates = true;
                     <GitHubIcon class="size-6" />
                     GitHub
                 </UrlPill>
-                <UrlPill href="https://www.linkedin.com/in/carlos-d-nino-r/">
+                <UrlPill
+                    href={resumeData.basics.profiles.filter(
+                        (p) => p.network == 'LinkedIn',
+                    )[0].url}
+                >
                     <LinkedInIcon size="25" />
                     LinkedIn
                 </UrlPill>
@@ -61,7 +68,7 @@ let renderCertificates = true;
                     <PDFIcon size="25" />
                     Curriculum
                 </UrlPill>
-                <UrlPill href="mailto:carlosndr93@gmail.com">
+                <UrlPill href={'mailto:' + resumeData.basics.email}>
                     <MailIcon />
                     carlosndr93@gmail.com
                 </UrlPill>

@@ -5,7 +5,7 @@
         "image": "https://media.licdn.com/dms/image/v2/D4E03AQGNjXsUtfLZ8Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1692964508964?e=1762387200&v=beta&t=cd8mcMxbHupNkMEi2U21PhrNeH-SMPmhd6qRlCRu4HI",
         "email": "carlosndr93@gmail.com",
         "phone": "0416-8552425",
-        "url": "my profile url placeholder",
+        "url": "https://carlosnino93.github.io/Portafolio-personal-page/",
         "summary": "I'm a full stack web developer with solid experience in backend development (.NET 7, .NET 9, .NET Core 5 with C# and Entity Framework Core) and frontend development (Angular, React, Bootstrap, Sass). My expertise includes configuring streaming APIs (Jellyfin), integrating services, manage databases with SQL and the use of Git. As an electronics engineer, I also bring significant experience from the industrial sector, where I've designed electrical panels for automation and control, supervised industrial plant maintenance (PLCs, boilers, effluent systems), and programmed HMI interfaces. This diverse background allows me to offer a comprehensive perspective on technology projects in various environments.I'm a full stack web developer with solid experience in backend development (.NET 7, .NET 9, .NET Core 5 with C# and Entity Framework Core) and frontend development (Angular, React, Bootstrap, Sass). My expertise includes configuring streaming APIs (Jellyfin), integrating services, manage databases with SQL and the use of Git. As an electronics engineer, I also bring significant experience from the industrial sector, where I've designed electrical panels for automation and control, supervised industrial plant maintenance (PLCs, boilers, effluent systems), and programmed HMI interfaces. This diverse background allows me to offer a comprehensive perspective on technology projects in various environments.",
         "location": {
             "address": "El Cují sector Los Robles Calle 1 con Carrera 1",
@@ -16,9 +16,14 @@
         },
         "profiles": [
             {
+                "network": "Github",
+                "username": "CarlosNino93",
+                "url": "https://github.com/CarlosNino93"
+            },
+            {
                 "network": "LinkedIn",
                 "username": "Carlos Niño",
-                "url": "www.linkedin.com/in/carlos-d-nino-r"
+                "url": "https://www.linkedin.com/in/carlos-d-nino-r"
             }
         ]
     },

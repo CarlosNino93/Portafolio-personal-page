@@ -6,6 +6,7 @@ import MailIcon from '../icons/usefullIcons/MailIcon.astro';
 import PDFIcon from '../icons/usefullIcons/PDFIcon.astro';
 import PersonIcon from '../icons/usefullIcons/PersonIcon.astro';
 import LinkButton from './LinkButton.astro';
+import resumeData from '@repositories/resume.json';
 ---
 
 <header
@@ -38,7 +39,7 @@ import LinkButton from './LinkButton.astro';
                 class="block md:hidden"
             /></a
         >
-        <a href="mailto:carlosndr93@gmail.com">
+        <a href={'mailto:' + resumeData.basics.email}>
             <p class="hidden md:block">Contact</p>
             <MailIcon class="block md:hidden" />
         </a>

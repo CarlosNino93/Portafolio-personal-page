@@ -1,8 +1,8 @@
 ---
-import LinkArrowIcon from '../icons/usefullIcons/LinkArrowIcon.astro';
-import resumeData from '../repositories/resume.json';
-import type { Certificate } from '../repositories/resume.types';
+import type { Certificate } from '@repositories/resume.types';
+import LinkArrowIcon from '../../icons/usefullIcons/LinkArrowIcon.astro';
 import UrlPill from './UrlPill.astro';
+import resumeData from '@repositories/resume.json';
 const certificates: Certificate[] = resumeData.certificates;
 ---
 

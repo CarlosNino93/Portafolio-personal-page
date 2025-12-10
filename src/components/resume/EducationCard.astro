@@ -1,15 +1,15 @@
 ---
-import type { WorkItem } from '@repositories/resume.types';
+import type { EducationItem } from '@repositories/resume.types';
 interface Props {
-    item: WorkItem;
+    item: EducationItem;
 }
 const { item } = Astro.props;
 ---
 
 <div
-    class="space-y-4 print:space-y-0 my-4 print:my-1"
+    class="space-y-4 print:space-y-0"
     role="feed"
-    aria-labelledby="work-experience"
+    aria-labelledby="Education-Section"
 >
     <article role="article">
         <div class="rounded-lg bg-card py-1 print:py-0">
@@ -25,33 +25,28 @@ const { item } = Astro.props;
                             href={item.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label={item.name}>{item.name}</a
-                        ><ul
-                            class="list-none p-0 hidden gap-x-1 sm:inline-flex"
-                            aria-label="Technologies used"
+                            aria-label="Motion company website"
+                            >{item.institution}</a
                         >
-                            <li class="bg-red-900 text-white print:hidden">
-                                list of technologies
-                            </li>
-                        </ul>
-                    </h3><div class="text-sm tabular-nums text-gray-500">
+                    </h3><div
+                        class="text-sm tabular-nums text-gray-500"
+                        aria-label="Employment period: 2025 to Present"
+                    >
                         {item.startDate}/{item.endDate}
                     </div>
                 </div><h4
                     class="font-mono text-sm font-semibold leading-none print:text-[12px]"
                 >
-                    {item.position}
+                    {item.area}
                 </h4>
             </div><div class="text-pretty font-mono text-sm">
                 <div
                     aria-label="Summary"
                     class="mt-2 text-xs print:mt-1 print:text-[10px] text-pretty"
                 >
-                    {item.summary}
-                    <ul class="list-disc mt-2 print:mt-0 ml-4">
-                        {item.highlights?.map((e) => <li>{e}</li>)}
-                    </ul>
+                    {item.studyType}
                 </div>
+                Skills
             </div>
         </div>
     </article>

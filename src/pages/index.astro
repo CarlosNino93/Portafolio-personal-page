@@ -1,22 +1,22 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
 import GitHubIcon from '../icons/usefullIcons/GitHubIcon.astro';
 import LinkedInIcon from '../icons/usefullIcons/LinkedInIcon.astro';
 import PDFIcon from '../icons/usefullIcons/PDFIcon.astro';
-import UrlPill from '../components/UrlPill.astro';
 import MailIcon from '../icons/usefullIcons/MailIcon.astro';
-import Experience from '../components/Experience.astro';
-import SectionContainer from '../components/SectionContainer.astro';
 import BriefCaseIcon from '../icons/usefullIcons/BriefCaseIcon.astro';
 import CodeIcon from '../icons/usefullIcons/CodeIcon.astro';
-import Projects from '../components/Projects.astro';
 import EducationIcon from '../icons/usefullIcons/EducationIcon.astro';
-import Education from '../components/Education.astro';
 import CertificateIcon from '../icons/usefullIcons/CertificateIcon.astro';
-import Certificates from '../components/Certificates.astro';
 import resumeData from '@repositories/resume.json';
+import Badge from '@components/ui/Badge.astro';
+import Certificates from '@components/ui/Certificates.astro';
+import Education from '@components/ui/Education.astro';
+import Experience from '@components/ui/Experience.astro';
+import Projects from '@components/ui/Projects.astro';
+import SectionContainer from '@components/ui/SectionContainer.astro';
+import UrlPill from '@components/ui/UrlPill.astro';
 
 let renderExperience = true;
 let renderProjects = true;

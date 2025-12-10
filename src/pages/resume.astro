@@ -1,19 +1,25 @@
 ---
 import '../styles/global.css';
-import resumeData from '@repositories/resume.json';
 import '@fontsource/inter';
+import { Image } from 'astro:assets';
+
+import resumeData from '@repositories/resume.json';
 import WorldIcon from '../icons/usefullIcons/WorldIcon.astro';
-import WebPill from '../components/WebPill.astro';
 import MailIcon from '../icons/usefullIcons/MailIcon.astro';
 import GitHubIcon from '../icons/usefullIcons/GitHubIcon.astro';
 import LinkedInIcon from '../icons/usefullIcons/LinkedInIcon.astro';
-import { Image } from 'astro:assets';
 import myPhoto from '@public/assets/my-photo.jpg';
+import WebPill from '@components/resume/WebPill.astro';
+import ExperienceCard from '@components/resume/ExperienceCard.astro';
+import EducationCard from '@components/resume/EducationCard.astro';
+import { TAGS } from '@repositories/TechnologyTags';
+import SkillTagsList from '@components/resume/SkillTagsList.astro';
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
+        <title>Carlos Niño CV.</title>
         <meta charset="UTF-8" />
         <meta name="description" content="Carlos Niño Developer CV" />
         <meta name="viewport" content="width=device-width" />
@@ -22,109 +28,157 @@ import myPhoto from '@public/assets/my-photo.jpg';
             type="image/svg+xml"
             href="/Portafolio-personal-page/favicon.svg"
         />
-        <title>Carlos Niño CV.</title>
     </head>
-</html>
-<body>
-    <main
-        class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16"
-        id="main-content"
-    >
-        <div class="sr-only">
-            <h1>"Carlos D. Niño R. resume"</h1>
-        </div>
-        <section
-            class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
-            aria-label="Resume Content"
+
+    <body>
+        <main
+            class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16"
+            id="main-content"
         >
-            <header class="flex items-center justify-between">
-                <div class="flex-1 space-y-1.5">
-                    <h1 class="text-2xl font-bold" id="resume-name">
-                        {resumeData.basics.name}
-                    </h1>
-                    <p
-                        class="max-w-md text-pretty font-mono text-sm print:text-[12px]"
-                    >
-                        {resumeData.basics.label}
-                    </p>
-                    <p
-                        class="max-w-md text-pretty font-mono text-sm print:text-[12px] flex items-center gap-2 my-2"
-                    >
-                        <WorldIcon class="size-5" />
-                        {resumeData.basics.location.city}, {
-                            resumeData.basics.location.countryCode
-                        }
-                    </p>
-                    <div
-                        id="web-links"
-                        aria-label="Web Links"
-                        class="flex gap-x-1 font-mono text-sm print:hidden"
-                    >
-                        <WebPill href="/Portafolio-personal-page" class="p-2"
-                            ><WorldIcon /></WebPill
-                        >
-                        <WebPill
-                            href={'mailto:' + resumeData.basics.email}
-                            class="p-2"><MailIcon /></WebPill
-                        >
-                        <WebPill
-                            href={resumeData.basics.profiles.filter(
-                                (p) => p.network == 'Github',
-                            )[0].url}><GitHubIcon class="size-4" /></WebPill
-                        >
-                        <WebPill
-                            href={resumeData.basics.profiles.filter(
-                                (p) => p.network == 'LinkedIn',
-                            )[0].url}><LinkedInIcon size="20" /></WebPill
-                        >
-                    </div>
-                    <div
-                        id="contact-information"
-                        aria-label="Print Contact Information"
-                        class="hidden print:flex flex-wrap gap-x-2 font-mono text-sm print:text-[12px]"
-                    >
-                        <a class="underline" href="/Portafolio-personal-page"
-                            >https://carlosnino93.github.io/Portafolio-personal-page</a
-                        >
-                        <span aria-hidden="true">/</span>
-                        <a class="underline" href="mailto:carlosndr93@gmail.com"
-                            >carlosndr93@gmail.com</a
-                        >
-                        <span aria-hidden="true">/</span>
-                        <a
-                            class="underline"
-                            href={resumeData.basics.profiles.filter(
-                                (p) => p.network == 'Github',
-                            )[0].url}>https://github.com/CarlosNino93</a
-                        >
-                        <span aria-hidden="true">/</span>
-                        <a
-                            class="underline"
-                            href={resumeData.basics.profiles.filter(
-                                (p) => p.network == 'LinkedIn',
-                            )[0].url}
-                            >https://www.linkedin.com/in/carlos-d-nino-r</a
-                        >
-                    </div>
-                </div>
-                <span
-                    class="relative flex shrink-0
-                overflow-hidden rounded-xl size-28"
-                    aria-hidden="true"
-                    ><Image src={myPhoto} alt="My Photo" /></span
-                >
-            </header>
-            <div class="space-y-8 print:space-y-4">
-                <section class="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
-                </section>
+            <div class="sr-only">
+                <h1>"Carlos D. Niño R. resume"</h1>
             </div>
-        </section>
-    </main>
-</body>
-<style>
-    html {
-        font-family: 'Inter', system-ui, sans-serif;
-        min-height: 100vh;
-        scroll-behavior: smooth;
-    }
-</style>
+            <section
+                class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
+                aria-label="Resume Content"
+            >
+                <header class="flex items-center justify-between">
+                    <div class="flex-1 space-y-1.5">
+                        <h1 class="text-2xl font-bold" id="resume-name">
+                            {resumeData.basics.name}
+                        </h1>
+                        <p
+                            class="max-w-md text-pretty font-mono text-sm print:text-[12px]"
+                        >
+                            {resumeData.basics.label}
+                        </p>
+                        <p
+                            class="max-w-md text-pretty font-mono text-sm print:text-[12px] flex items-center gap-2 my-2"
+                        >
+                            <WorldIcon class="size-5" />
+                            {resumeData.basics.location.city}, {
+                                resumeData.basics.location.countryCode
+                            }
+                        </p>
+                        <div
+                            id="web-links"
+                            aria-label="Web Links"
+                            class="flex gap-x-1 font-mono text-sm print:hidden"
+                        >
+                            <WebPill
+                                href="/Portafolio-personal-page"
+                                class="p-2"><WorldIcon /></WebPill
+                            >
+                            <WebPill
+                                href={'mailto:' + resumeData.basics.email}
+                                class="p-2"><MailIcon /></WebPill
+                            >
+                            <WebPill
+                                href={resumeData.basics.profiles.filter(
+                                    (p) => p.network == 'Github',
+                                )[0].url}><GitHubIcon class="size-4" /></WebPill
+                            >
+                            <WebPill
+                                href={resumeData.basics.profiles.filter(
+                                    (p) => p.network == 'LinkedIn',
+                                )[0].url}><LinkedInIcon size="20" /></WebPill
+                            >
+                        </div>
+                        <div
+                            id="contact-information"
+                            aria-label="Print Contact Information"
+                            class="hidden print:flex flex-wrap gap-x-2 font-mono text-sm print:text-[12px]"
+                        >
+                            <a
+                                class="underline"
+                                href="/Portafolio-personal-page"
+                                >https://carlosnino93.github.io/Portafolio-personal-page</a
+                            >
+                            <span aria-hidden="true">/</span>
+                            <a
+                                class="underline"
+                                href="mailto:carlosndr93@gmail.com"
+                                >carlosndr93@gmail.com</a
+                            >
+                            <span aria-hidden="true">/</span>
+                            <a
+                                class="underline"
+                                href={resumeData.basics.profiles.filter(
+                                    (p) => p.network == 'Github',
+                                )[0].url}>https://github.com/CarlosNino93</a
+                            >
+                            <span aria-hidden="true">/</span>
+                            <a
+                                class="underline"
+                                href={resumeData.basics.profiles.filter(
+                                    (p) => p.network == 'LinkedIn',
+                                )[0].url}
+                                >https://www.linkedin.com/in/carlos-d-nino-r</a
+                            >
+                        </div>
+                    </div>
+                    <span
+                        class="relative flex shrink-0
+                overflow-hidden rounded-xl size-28"
+                        aria-hidden="true"
+                        ><Image src={myPhoto} alt="My Photo" /></span
+                    >
+                </header>
+                <div class="space-y-8 print:space-y-4">
+                    <section
+                        id="about-me"
+                        aria-label="About me"
+                        class="flex min-h-0 flex-col gap-y-3 print:gap-y-1"
+                    >
+                        <h2 class="text-xl font-bold" id="about-section">
+                            About me
+                        </h2>
+                        <p
+                            class="text-pretty font-mono text-sm print:text-[12px]"
+                            aria-labelledby="about-section"
+                        >
+                            {resumeData.basics.summary}
+                        </p>
+                    </section>
+                    <section
+                        class="flex min-h-0 flex-col gap-y-3 print:gap-y-0"
+                        id="work-experience"
+                        aria-label="Work experience"
+                    >
+                        <h2 class="text-xl font-bold">Work Experience</h2>
+
+                        {
+                            resumeData.work.map((w) => (
+                                <ExperienceCard item={w} />
+                            ))
+                        }
+                    </section>
+                </div>
+            </section>
+            <section
+                id="education-section"
+                aria-label="Education Section"
+                class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
+            >
+                <h2 class="text-xl font-bold">Education</h2>
+
+                {resumeData.education.map((w) => <EducationCard item={w} />)}
+            </section>
+            <section
+                id="skills-section"
+                arial-label="Education-Section"
+                class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4 mt-4 print:mt-1"
+            >
+                <h2 class="text-xl font-bold">Skills</h2>
+                <SkillTagsList tags={TAGS} />
+            </section>
+        </main>
+    </body>
+    <style>
+        html {
+            font-family: 'Inter', system-ui, sans-serif;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+    </style>
+</html>

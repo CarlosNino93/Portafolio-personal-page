@@ -38,9 +38,9 @@ export const TAGS = {
         class: 'bg-black text-white',
         icon: SupabaseIcon,
     },
-    TAYLWIND: {
+    TAILWIND: {
         title: 'Tailwind CSS',
-        class: 'bg-black text-green',
+        class: 'bg-black text-white',
         icon: TailwindIcon,
     },
 };

@@ -1,0 +1,34 @@
+---
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+
+interface Tag {
+    class: string;
+    title: string;
+    icon: AstroComponentFactory;
+}
+export interface Taglist {
+    [key: string]: Tag;
+}
+
+interface Props {
+    tags: Taglist;
+}
+
+const { tags } = Astro.props;
+---
+
+<ul class="flex flex-row mb-2 gap-x-2">
+    {
+        Object.entries(tags).map(([key, tag]) => (
+            // 'key' is the string property name, 'tag' is the 'Tag' object
+            <li>
+                <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                >
+                    {tag.title}
+                    <tag.icon class="size-4" />
+                </span>
+            </li>
+        ))
+    }
+</ul>

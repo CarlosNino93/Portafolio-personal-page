@@ -1,0 +1,53 @@
+---
+import type { EducationItem } from '@repositories/resume.types';
+interface Props {
+    item: EducationItem;
+}
+const { item } = Astro.props;
+---
+
+<div
+    class="space-y-4 print:space-y-0"
+    role="feed"
+    aria-labelledby="Education-Section"
+>
+    <article role="article">
+        <div class="rounded-lg bg-card py-1 print:py-0">
+            <div class="flex flex-col space-y-1.5 print:space-y-1">
+                <div
+                    class="flex items-center justify-between gap-x-2 text-base"
+                >
+                    <h3
+                        class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm"
+                    >
+                        <a
+                            class="hover:underline"
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Motion company website"
+                            >{item.institution}</a
+                        >
+                    </h3><div
+                        class="text-sm tabular-nums text-gray-500"
+                        aria-label="Employment period: 2025 to Present"
+                    >
+                        {item.startDate}/{item.endDate}
+                    </div>
+                </div><h4
+                    class="font-mono text-sm font-semibold leading-none print:text-[12px]"
+                >
+                    {item.area}
+                </h4>
+            </div><div class="text-pretty font-mono text-sm">
+                <div
+                    aria-label="Summary"
+                    class="mt-2 text-xs print:mt-1 print:text-[10px] text-pretty"
+                >
+                    {item.studyType}
+                </div>
+                Skills
+            </div>
+        </div>
+    </article>
+</div>

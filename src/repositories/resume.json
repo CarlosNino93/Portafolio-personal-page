@@ -31,7 +31,7 @@
         {
             "name": "Moovimi",
             "position": "Jellyfin API Maintainer",
-            "url": "",
+            "url": "https://www.moovimi.com",
             "startDate": "2023-03-01",
             "endDate": "Current",
             "summary": "Maintain and customize changes to the Jellyfin-based streaming API using .Net 7 & .Net 9. This includes configuration and modification of EndPoints and source code to adapt it to the specific needs of the streaming application. This was a part-time, remote role.",
@@ -286,8 +286,28 @@
     "skills": [
         {
             "name": "Web Development",
-            "level": "Master",
-            "keywords": ["HTML", "CSS", "JavaScript"]
+            "level": "Semi-Senior",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Nextjs",
+                ".Net",
+                "C#",
+                "Angular",
+                "SQL"
+            ]
+        },
+        {
+            "name": "Automation Designer",
+            "level": "Senior",
+            "keywords": [
+                "Autocad",
+                "Autocad Plant 3D",
+                "Autocad Electrical",
+                "Grounding",
+                "Low and Middle tension"
+            ]
         }
     ],
     "languages": [

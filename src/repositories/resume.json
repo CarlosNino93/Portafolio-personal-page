@@ -211,28 +211,28 @@
             "name": "Professional Course on Git and GitHub",
             "date": "2023-09-01",
             "issuer": "Platzi",
-            "issuerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQEOTcHh0HnWwQ/company-logo_100_100/company-logo_100_100/0/1677870818259/platzi_inc_logo?e=1765411200&v=beta&t=hba_aW-KqkQ7moi6K2QOqLR_puda26lxXqhcG1KJ8Uo",
+            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
             "url": "https://platzi.com/p/carlosndr93/curso/1557-git-github/diploma/detalle/"
         },
         {
             "name": "Introduction to Artificial Intelligence Course",
             "date": "2023-09-01",
             "issuer": "Platzi",
-            "issuerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQEOTcHh0HnWwQ/company-logo_100_100/company-logo_100_100/0/1677870818259/platzi_inc_logo?e=1765411200&v=beta&t=hba_aW-KqkQ7moi6K2QOqLR_puda26lxXqhcG1KJ8Uo",
+            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
             "url": "https://platzi.com/p/carlosndr93/curso/6935-ai/diploma/detalle/"
         },
         {
             "name": "EF Standard English test",
             "date": "2025-06-05",
             "issuer": "EF International Language Centers",
-            "issuerLogo": "https://media.licdn.com/dms/image/v2/D560BAQEaZTEMTXUcXg/company-logo_100_100/company-logo_100_100/0/1707299032732/ef_language_schools_for_professionals_logo?e=1765411200&v=beta&t=ZW3x0fzBFeD1_cNvcPmyP9RoLxz59tUU4imai7WDvWI",
+            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/ef_language_schools_for_professionals_logo.jpg",
             "url": "https://www.efset.org/cert/YZemcr"
         },
         {
             "name": "Basic Programming Course",
             "date": "2023-01-01",
             "issuer": "Platzi",
-            "issuerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQEOTcHh0HnWwQ/company-logo_100_100/company-logo_100_100/0/1677870818259/platzi_inc_logo?e=1765411200&v=beta&t=hba_aW-KqkQ7moi6K2QOqLR_puda26lxXqhcG1KJ8Uo",
+            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
             "url": "https://platzi.com/p/carlosndr93/curso/1050-basico-programacion/diploma/detalle/"
         }
     ],

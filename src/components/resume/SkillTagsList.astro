@@ -17,12 +17,12 @@ interface Props {
 const { tags } = Astro.props;
 ---
 
-<ul class="flex flex-row mb-2 gap-x-2">
+<ul class="flex max-w-2xl flex-wrap mb-2 gap-2">
     {
         Object.entries(tags).map(([key, tag]) => (
-            // 'key' is the string property name, 'tag' is the 'Tag' object
             <li>
                 <span
+                    id={key}
                     class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
                 >
                     {tag.title}

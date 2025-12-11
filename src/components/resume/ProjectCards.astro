@@ -1,0 +1,70 @@
+---
+import type { Project } from '@repositories/resume.types';
+
+interface Props {
+    projects: Project[];
+}
+
+const { projects } = Astro.props;
+---
+
+<div
+    class="-mx-3 grid grid-cols-1 gap-3 print:grid:grid-cols-2 print:gap-2 md:grid-cols-2"
+    role="feed"
+    aria-labelledby="side-projects"
+>
+    {
+        projects.map((p) => (
+            <article class="h-full">
+                <div
+                    class="rounded-lg flex h-full flex-col overflow-hidden border p-3"
+                    role="article"
+                >
+                    <div class="flex flex-col space-y-1.5">
+                        <div class="space-y-1">
+                            <h3 class="font-semibold tracking-tight">
+                                <a
+                                    href={p.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1 hover:underline"
+                                    aria-label={p.name + '(opens in new tab)'}
+                                >
+                                    {p.name}
+                                    <span
+                                        class="size-1 rounded-full bg-green-500"
+                                        aria-label="Active project indicator"
+                                    />
+                                </a>
+                                <div
+                                    class="hidden font-mono text-xs underline print:visible"
+                                    aria-hidden="true"
+                                />
+                            </h3>
+                            <p
+                                class="text-pretty font-mono text-xs print:text-[10px]"
+                                aria-label="Project description"
+                            >
+                                {p.description}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-pretty font-mono text-sm mt-auto flex">
+                        <ul
+                            class="mt-2 flex list-none flex-wrap gap-1 p-0"
+                            aria-label="Technologies used"
+                        >
+                            {p.highlights!.map((highlight) => (
+                                <li>
+                                    <div class="inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent  bg-gray-200 hover:bg-gray-200/60 px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight">
+                                        {highlight}
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        ))
+    }
+</div>

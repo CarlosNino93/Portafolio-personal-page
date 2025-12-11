@@ -211,28 +211,28 @@
             "name": "Professional Course on Git and GitHub",
             "date": "2023-09-01",
             "issuer": "Platzi",
-            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
+            "issuerLogo": "/Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
             "url": "https://platzi.com/p/carlosndr93/curso/1557-git-github/diploma/detalle/"
         },
         {
             "name": "Introduction to Artificial Intelligence Course",
             "date": "2023-09-01",
             "issuer": "Platzi",
-            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
+            "issuerLogo": "/Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
             "url": "https://platzi.com/p/carlosndr93/curso/6935-ai/diploma/detalle/"
         },
         {
             "name": "EF Standard English test",
             "date": "2025-06-05",
             "issuer": "EF International Language Centers",
-            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/ef_language_schools_for_professionals_logo.jpg",
+            "issuerLogo": "/Portafolio-personal-page/assets/companyLogos/ef_language_schools_for_professionals_logo.jpg",
             "url": "https://www.efset.org/cert/YZemcr"
         },
         {
             "name": "Basic Programming Course",
             "date": "2023-01-01",
             "issuer": "Platzi",
-            "issuerLogo": "./Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
+            "issuerLogo": "/Portafolio-personal-page/assets/companyLogos/platzi_inc_logo.jpg",
             "url": "https://platzi.com/p/carlosndr93/curso/1050-basico-programacion/diploma/detalle/"
         }
     ],
